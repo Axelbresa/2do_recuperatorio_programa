@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const path = require("path");
 require("dotenv").config();
 require("ejs");
-//const { sequelize } = require("./src/database/db");
+const { sequelize } = require("./src/database/db");
 
 const app = express();
 
