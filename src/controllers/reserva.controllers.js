@@ -67,12 +67,10 @@ ctrl.crearUsuarios = async (req, res) => {
     const {    
       nombre,
       apellido,
-      fecha_ingreso,
-      fecha_salida,
       precio,
       hora, 
       fecha,
-      cant_ticket,
+      
       pelicula,
       duracion,
       cantidad_personas,
@@ -86,7 +84,7 @@ ctrl.crearUsuarios = async (req, res) => {
           fecha_ingreso,
           fecha_salida,
           precio,
-         cant_ticket,
+        
           pelicula,
           fecha,
           hora,

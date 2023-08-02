@@ -10,7 +10,7 @@
 
             <div class="mx-auto">
                 <form action="#" id="formNuevaReserva" class="rounded border p-3">
-                    <h3 class="mb-3 text-center bg-primary text-light rounded p-2">Nueva reserva vuelo</h3>
+                    <h3 class="mb-3 text-center bg-primary text-light rounded p-2">Nueva reserva del cine</h3>
                     <div class="row">
                         <div class="col col-md-6 col-sm-12 mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
@@ -33,7 +33,7 @@
                         <div class="col col-md-6 col-sm-12 mb-3">
                             <label for="fecha" class="form-label">Fecha</label>
                             <input type="datetime-local" required="true" class="form-control" id="fecha"
-                                name="hora">
+                                name="fecha">
                         </div>
 
                     </div>
@@ -50,11 +50,16 @@
                     </div>
 
                     <div class="row">
-                        <!-- Nro asiento -->
                         <div class="col col-sm-12 col-md-6 mb-3">
-                            <label for="cant_ticket" class="form-label">Cant. tickts</label>
-                            <input type="text" required="true" class="form-control" id="cant_ticket" name="	cant_ticket">
+                            <label for="email" class="form-label">Email contacto:</label>
+                            <input type="email" required="true" class="form-control" id="email" name="email">
                         </div>
+
+                        <!-- Nro asiento -->
+                        <!-- <div class="col col-sm-12 col-md-6 mb-3">
+                            <label for="cant_ticket" class="form-label">Cant. tickts</label>
+                            <input type="number" required="true" class="form-control" id="cant_ticket" name="cant_ticket">
+                        </div> -->
 
                         <!-- Cantidad de húespedes -->
                         <div class="col col-sm-12 col-md-6 mb-3">
@@ -77,10 +82,7 @@
                         </div>
 
                         <!-- Email contacto -->
-                        <div class="col col-sm-12 col-md-6 mb-3">
-                            <label for="email" class="form-label">Email contacto:</label>
-                            <input type="email" required="true" class="form-control" id="email" name="email">
-                        </div>
+                       
                     </div>
 
                     <div class="row d-flex align-items-center justify-content-end">
@@ -96,5 +98,5 @@
         </div>
     </div>
 
-     <script src=""></script> 
+     <script src="/crear-reserva.js"></script> 
     <%- include('partials/footer') %>
