@@ -33,11 +33,11 @@ app.listen(process.env.PORT, function (req, res) {
   });
 
   //conexion a la base de datos
-// sequelize
-// .authenticate()
-// .then(() => {
-//   console.log("nos hemos conectado a la base de datos");
-// })
-// .catch((error) => {
-//   console.log("se ha producido un error", error);
-// });
+sequelize
+.authenticate()
+.then(() => {
+  console.log("nos hemos conectado a la base de datos");
+})
+.catch((error) => {
+  console.log("se ha producido un error", error);
+});
